@@ -27,7 +27,7 @@ You can install the **stable** version on [R CRAN](https://cran.r-project.org/pa
 install.packages("PSGD", dependencies = TRUE)
 ```
 
-You can install the **development** version from [GitHub](https://github.com/AnthonyChristidis/PSGD)
+You can install the **development** version from [GitHub](https://github.com/AnthonyChristidis/PSGD).
 
 ``` r
 library(devtools)

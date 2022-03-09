@@ -21,7 +21,7 @@ install.packages("PSGD", dependencies = TRUE)
 ```
 
 You can install the **development** version from
-[GitHub](https://github.com/AnthonyChristidis/PSGD)
+[GitHub](https://github.com/AnthonyChristidis/PSGD).
 
 ``` r
 library(devtools)
