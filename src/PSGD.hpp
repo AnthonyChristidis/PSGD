@@ -57,7 +57,7 @@ public:
        arma::uword split, arma::uword size,
        arma::uword max_iter,
        arma::uword cycling_iter);
-  
+
   // Function to set the split of the model
   void Set_Split(arma::uword split);
   

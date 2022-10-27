@@ -27,7 +27,7 @@ void PSGD::Update_Subset_Matrix(arma::uword& group) {
 }
 void PSGD::Update_Subset_Matrix(arma::uword& group, arma::mat& subset_indices, arma::mat& betas) {
   
-  arma::colvec group_subset = arma::zeros(x.n_cols);
+  arma::colvec group_subset = arma::zeros(x.n_cols); 
   group_subset(arma::find(betas.col(group) != 0)).ones();
   subset_indices.col(group) = group_subset;
 }
@@ -41,7 +41,7 @@ arma::uvec PSGD::Model_Subset(arma::uword& group) {
 arma::uvec PSGD::Model_Subset(arma::uword& group, arma::mat& subset_indices) {
   
   arma::vec predictor_usage = arma::sum(subset_indices, 1) - subset_indices.col(group);
-  return(arma::find(predictor_usage < split));
+  return(arma::find(predictor_usage < split)); 
 }
 
 // Constructor
