@@ -5,7 +5,7 @@
 * Package Name: PSGD
 *
 * Created by Anthony-A. Christidis.
-* Copyright © Anthony-A. Christidis. All rights reserved.
+* Copyright (c) Anthony-A. Christidis. All rights reserved.
 * ===========================================================
 */
 
@@ -192,7 +192,7 @@ void PSGD::Compute_Ensemble_Cycling() {
 
 // Function to return final intercept and betas
 arma::vec PSGD::Get_Intercepts() {
-  return(intercepts);
+  return(intercepts); 
 }
 arma::mat PSGD::Get_Betas() {
   return(betas);
