@@ -26,7 +26,7 @@ void PSGD::Update_Subset_Matrix(arma::uword& group) {
   subset_indices.col(group) = group_subset;
 }
 void PSGD::Update_Subset_Matrix(arma::uword& group, arma::mat& subset_indices, arma::mat& betas) {
-  
+
   arma::colvec group_subset = arma::zeros(x.n_cols); 
   group_subset(arma::find(betas.col(group) != 0)).ones();
   subset_indices.col(group) = group_subset;
